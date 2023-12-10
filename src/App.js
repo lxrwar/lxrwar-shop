@@ -2,9 +2,11 @@ import './App.css';
 import styled from 'styled-components';
 import Main from './components/Main/Main';
 import Header from './components/Header/Header';
+import CartStructure from './components/Cart/CartStructure';
 
 const MainContainer = styled.div`
   display: flex;
+  flex-direction: column;
 `
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
     <MainContainer>
       <Header/>
       <Main/>
+      <CartStructure/>
     </MainContainer>
   );
 }
