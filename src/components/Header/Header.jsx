@@ -4,15 +4,18 @@ import { Link } from "react-scroll";
 
 const HeaderContainer = styled.div`
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
   background-color: black;
   height: 70px;
   color: white;
   font-size: large;
   font-weight: 400;
   text-transform: uppercase;
+  z-index: 10;
   #linkStyle{
     cursor: pointer;
     transition: all .3s ease-in-out;

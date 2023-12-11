@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import area51Box from "../../assets/Box/area51Box.png";
 
 const CartContainer = styled.div`
   display: flex;
@@ -16,33 +15,36 @@ const CartTop = styled.div`
 const CardBottom = styled.div`
   display: flex;
   flex-direction: column;
-  button{
-    width: 100%;
-    height: 50px;
-    background-color: #f5f5f5;
-    border: none;
-    border-top: 1px solid #e0e0e0;
-    cursor: pointer;
-    outline: none;
-    transition: all .3s ease-in-out;
-    &:hover{
-      background-color: #e0e0e0;
-    }
+  span{
+    margin: 10px 0;
+  }
+  button {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, #570057 50%, #f5f5f5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: #fff;
+    background-position: left bottom;
+  }
   }
 `;
 
-const Cart = () => {
+const Cart = ({ data }) => {
   return (
     <CartContainer>
       <CartTop>
-        <img src={area51Box} alt="" />
+        <img src={data.img} alt="" />
       </CartTop>
       <CardBottom>
-        <h2>AREA 51</h2>
-        <span>
-          Погрузитесь в тайны Area 51 с этим сюрприз-боксом, полным уникальных
-          сувениров и загадочных артефактов.
-        </span>
+        <h2>{data.title}</h2>
+        <span>{data.description}</span>
         <button type="button">Замовити</button>
       </CardBottom>
     </CartContainer>
