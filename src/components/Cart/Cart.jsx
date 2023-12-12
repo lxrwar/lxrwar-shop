@@ -49,7 +49,7 @@ const Cart = ({ data }) => {
       <CardBottom>
         <h2>{data.title}</h2>
         <span>{data.description}</span>
-        <button type="button">Замовити</button>
+        <button type="button">In Order</button>
       </CardBottom>
     </CartContainer>
   );

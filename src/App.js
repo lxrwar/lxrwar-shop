@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Main from './components/Main/Main';
 import Header from './components/Header/Header';
 import CartStructure from './components/Cart/CartStructure';
+import BuyTogether from './components/BuyTogether/BuyTogether';
 
 const MainContainer = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ function App() {
       <Header/>
       <Main/>
       <CartStructure/>
-      
+      <BuyTogether/>
     </MainContainer>
   );
 }
