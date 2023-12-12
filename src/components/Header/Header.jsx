@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { ReactSVG } from "react-svg";
+import likeIMG from "../../assets/Svg/like.svg";
+import cartIMG from "../../assets/Svg/cart.svg";
+import userIMG from "../../assets/Svg/user.svg";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -16,12 +20,12 @@ const HeaderContainer = styled.div`
   font-weight: 400;
   text-transform: uppercase;
   z-index: 10;
-  #linkStyle{
+  #linkStyle {
     cursor: pointer;
-    transition: all .3s ease-in-out;
-    &:hover{
+    transition: all 0.3s ease-in-out;
+    &:hover {
       transform: scale(1.1);
-        color: #ffbf00;
+      color: #ffbf00;
     }
   }
 `;
@@ -34,6 +38,14 @@ const LeftContent = styled.div`
   display: flex;
   justify-content: space-between;
   width: 10%;
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    &:hover {
+      fill: #ffbf00;
+    }
+  }
 `;
 
 const Header = () => {
@@ -49,13 +61,13 @@ const Header = () => {
       </RightContent>
       <LeftContent>
         <Link id="linkStyle" to="path" smooth={true} duration={500}>
-          Auth
+        <ReactSVG src={userIMG}/>
         </Link>
         <Link id="linkStyle" to="path" smooth={true} duration={500}>
-          Like
-        </Link>
+        <ReactSVG src={likeIMG}/>
+          </Link>
         <Link id="linkStyle" to="path" smooth={true} duration={500}>
-          Cart
+        <ReactSVG src={cartIMG}/>
         </Link>
       </LeftContent>
     </HeaderContainer>
