@@ -7,6 +7,7 @@ import CartStructure from './components/Cart/CartStructure';
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: 'Fira Sans', sans-serif;
 `
 
 function App() {

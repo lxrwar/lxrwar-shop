@@ -11,17 +11,23 @@ const MainContainer = styled.div`
     background-image: url(${bgIMG});
     background-size: cover;
     h1{
-        margin: 370px 0;
-        width: 100%;
         text-align: center;
         backdrop-filter: blur(10px);
     }
 `
+const StickyContainer = styled.div`
+    position: sticky;
+    width: 100%;
+    margin: 370px 0;
+    top: 0px;
+`;
 
 const Main = () => {
     return(
         <MainContainer>
-            <h1>Lxrwar Shop</h1>
+            <StickyContainer>
+                <h1>Lxrwar Shop</h1>
+            </StickyContainer>
         </MainContainer>
     );
 }

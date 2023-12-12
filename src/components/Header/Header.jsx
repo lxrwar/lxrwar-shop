@@ -5,12 +5,12 @@ import { Link } from "react-scroll";
 const HeaderContainer = styled.div`
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 90%;
+  height: 70px;
+  padding: 0 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
   background-color: black;
-  height: 70px;
   color: white;
   font-size: large;
   font-weight: 400;
@@ -20,7 +20,8 @@ const HeaderContainer = styled.div`
     cursor: pointer;
     transition: all .3s ease-in-out;
     &:hover{
-        color: gray;
+      transform: scale(1.1);
+        color: #ffbf00;
     }
   }
 `;
