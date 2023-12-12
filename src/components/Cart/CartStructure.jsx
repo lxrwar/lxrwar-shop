@@ -4,8 +4,6 @@ import Cart from "./Cart";
 import area51Box from "../../assets/Box/area51Box.png";
 import mistakeBox from "../../assets/Box/mistakeBox.png";
 import rainbowBox from "../../assets/Box/rainbowBox.png";
-import birthdayTrands from "../../assets/birthdayTrands.png";
-import moneyTrands from "../../assets/moneyTrands.png";
 import confettiTrands from "../../assets/confettiTrands.png";
 
 const CartStructureContainer = styled.div`
