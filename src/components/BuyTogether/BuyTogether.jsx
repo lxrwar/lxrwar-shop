@@ -9,41 +9,44 @@ const BuyTogetherContainer = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  padding: 100px 100px;
+  padding: 125px 100px;
   img {
     width: 40%;
   }
   button {
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  background: linear-gradient(to right, #e79f05 50%, #f5f5f5 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  font-family: 'Fira Sans', sans-serif;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    color: #fff;
-    background-position: left bottom;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(to right, #e79f05 50%, #f5f5f5 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: "Fira Sans", sans-serif;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      color: #fff;
+      background-position: left bottom;
+    }
   }
+  h2 {
+    font-size: 40px;
+    color: #ffbf00;
   }
-  h2{
-     font-size: 40px;
-     color: #ffbf00;
-     margin-right: 50px;
-  }
-  .orderForm{
+  .orderForm {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 30%;
     margin-left: 50px;
-    span{
+    span {
+      padding: 20px 0;
       font-size: 20px;
+      font-weight: 300;
     }
   }
 `;
@@ -51,9 +54,9 @@ const BuyTogetherContainer = styled.div`
 const BuyTogether = () => {
   return (
     <BuyTogetherContainer>
-      <h2>Buy More, <br />Save More!</h2>
       <img src={BoxesIMG} alt="" />
       <div className="orderForm">
+        <h2>Buy More, Save More!</h2>
         <span>
           Experience the thrill of unboxing multiple surprises with our special
           bundle offer! Each box in this bundle is carefully curated with unique

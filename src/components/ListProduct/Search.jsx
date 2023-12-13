@@ -4,6 +4,7 @@ import styled from "styled-components";
 import SearchIMG from "../../assets/Svg/Search.svg";
 import SortIMG from "../../assets/Svg/Sorting-Arrows.svg";
 import FilterIMG from "../../assets/Svg/Filter.svg";
+import SantaHatIMG from "../../assets/Svg/Santas-Hat_1.svg";
 
 const SearchContainer = styled.div`
   display: flex;
@@ -39,6 +40,7 @@ const Category = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   font-size: 20px;
   width: 100%;
   height: 50px;
@@ -49,6 +51,12 @@ const Category = styled.div`
   &:hover {
     background-color: black;
     color: white;
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
 `;
 const Sort = styled.div`
@@ -108,7 +116,8 @@ const Search = () => {
         <span>New</span>
       </Category>
       <Category>
-        <span>Happy NY</span>
+        <span>Happy NY </span>
+        <ReactSVG src={SantaHatIMG}/>
       </Category>
       <Category>
         <span>Mistake</span>
