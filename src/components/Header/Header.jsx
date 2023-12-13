@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import likeIMG from "../../assets/Svg/like.svg";
 import cartIMG from "../../assets/Svg/cart.svg";
@@ -22,6 +23,7 @@ const HeaderContainer = styled.div`
   z-index: 10;
   #linkStyle {
     cursor: pointer;
+    color: white;
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.1);
@@ -32,16 +34,15 @@ const HeaderContainer = styled.div`
 const RightContent = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  gap: 20px;
 `;
 const LeftContent = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  gap: 20px;
   svg {
     width: 30px;
     height: 30px;
-    margin-left: 20px;
     &:hover {
       fill: #ffbf00;
     }
@@ -60,9 +61,9 @@ const Header = () => {
         </Link>
       </RightContent>
       <LeftContent>
-        <Link id="linkStyle" to="path" smooth={true} duration={500}>
+        <LinkRouter id="linkStyle" to="/login" smooth={true} duration={500}>
         <ReactSVG src={userIMG}/>
-        </Link>
+        </LinkRouter>
         <Link id="linkStyle" to="path" smooth={true} duration={500}>
         <ReactSVG src={likeIMG}/>
           </Link>
