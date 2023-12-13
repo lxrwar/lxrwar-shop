@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import CartStructure from './components/Cart/CartStructure';
 import BuyTogether from './components/BuyTogether/BuyTogether';
 import ListStructure from './components/ListProduct/ListStructure';
+import Footer from './components/Footer/Footer';
 
 const MainContainer = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ function App() {
       <CartStructure/>
       <BuyTogether/>
       <ListStructure/>
+      <Footer/>
     </MainContainer>
   );
 }

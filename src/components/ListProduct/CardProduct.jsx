@@ -14,6 +14,19 @@ const CardContainer = styled.div`
     background-color: black;
     color: white;
   }
+  h3:nth-child(2) {
+    width: 30%;
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    background-color: white;
+    color: black;
+  }
+  .price {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
   button {
     width: 100%;
     height: 50px;
@@ -39,7 +52,10 @@ const CardProduct = ({ data }) => {
       <img src={data.image} alt="" />
       <h2>{data.title}</h2>
       <span>{data.description}</span>
-      <h3>{data.price} $</h3>
+      <div className="price">
+      <h3>{Math.round(data.price * 0.7)}$</h3>
+      <h3>{data.price}$</h3>
+      </div>
       <button>In Cart</button>
     </CardContainer>
   );
