@@ -53,7 +53,7 @@ const BuyTogetherContainer = styled.div`
 
 const BuyTogether = () => {
   return (
-    <BuyTogetherContainer>
+    <BuyTogetherContainer id="BoxSet">
       <img src={BoxesIMG} alt="" />
       <div className="orderForm">
         <h2>Buy More, Save More!</h2>

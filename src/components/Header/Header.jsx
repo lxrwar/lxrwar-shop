@@ -52,10 +52,10 @@ const Header = () => {
   return (
     <HeaderContainer>
       <RightContent>
-        <Link id="linkStyle" to="path" smooth={true} duration={500}>
+        <Link id="linkStyle" to="Home" smooth={true} duration={500}>
           Home
         </Link>
-        <Link id="linkStyle" to="path" smooth={true} duration={500}>
+        <Link id="linkStyle" to="BoxSet" smooth={true} duration={500}>
           About As
         </Link>
       </RightContent>

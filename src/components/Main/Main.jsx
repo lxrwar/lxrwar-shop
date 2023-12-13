@@ -24,7 +24,7 @@ const StickyContainer = styled.div`
 
 const Main = () => {
     return(
-        <MainContainer>
+        <MainContainer id="Home">
             <StickyContainer>
                 <h1>Lxrwar Shop</h1>
             </StickyContainer>
