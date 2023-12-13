@@ -93,7 +93,7 @@ const ListStructure = () => {
     },
   ];
   return (
-    <ListContainer>
+    <ListContainer id="AllProducts">
       <h2>Search Box</h2>
       <Search />
       <div className="cards">

@@ -59,6 +59,9 @@ const Header = () => {
         <Link id="linkStyle" to="BoxSet" smooth={true} duration={500}>
           About As
         </Link>
+        <Link id="linkStyle" to="AllProducts" smooth={true} duration={500}>
+          All Products
+        </Link>
       </RightContent>
       <LeftContent>
         <LinkRouter id="linkStyle" to="/login" smooth={true} duration={500}>
