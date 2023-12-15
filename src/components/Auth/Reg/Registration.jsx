@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { ReactSVG } from 'react-svg';
+import { ReactSVG } from "react-svg";
 import BackIMG from "../../../assets/Svg/Back.svg";
 
-const LoginContainer = styled.div`
+const RegContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ const LoginContainer = styled.div`
   height: 100vh;
 `;
 
-const LoginForm = styled.form`
+const RegForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -28,7 +28,6 @@ const LoginForm = styled.form`
   .navigation {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     svg {
         width: 30px;
@@ -41,7 +40,7 @@ const LoginForm = styled.form`
   }
 `;
 
-const LoginInput = styled.input`
+const RegInput = styled.input`
   display: flex;
   align-items: center;
   width: 100%;
@@ -53,7 +52,7 @@ const LoginInput = styled.input`
   font-family: "Fira Sans", sans-serif;
 `;
 
-const LoginButton = styled.button`
+const RegButton = styled.button`
   padding: 5px 10px;
   background-color: black;
   font-size: 14px;
@@ -67,25 +66,26 @@ const LoginButton = styled.button`
     background-color: #fff;
     color: black;
   }
-
 `;
 
-const Login = () => {
-
-return (
-    <LoginContainer>
-        <LoginForm>
-            <h2>Login</h2>
-            <LoginInput type="text" placeholder="Username" />
-            <LoginInput type="password" placeholder="Password" />
-            <div className="navigation">
-                <Link to="/"><ReactSVG src={BackIMG} /></Link>
-                <LoginButton>Login</LoginButton>
-                <Link to="/register">Register</Link>
-            </div>
-        </LoginForm>
-    </LoginContainer>
-);
+const Registration = () => {
+  return (
+    <RegContainer>
+      <RegForm>
+        <h2>Register</h2>
+        <RegInput name="name" type="text" placeholder="Username" />
+        <RegInput name="email" type="email" placeholder="Email" />
+        <RegInput name="password" type="password" placeholder="Password" />
+        <div className="navigation">
+          <Link to="/">
+            <ReactSVG src={BackIMG} />
+          </Link>
+          <RegButton>Register</RegButton>
+          <Link to="/login">Login</Link>
+        </div>
+      </RegForm>
+    </RegContainer>
+  );
 };
 
-export default Login;
+export default Registration;

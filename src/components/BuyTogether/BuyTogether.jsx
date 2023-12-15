@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BoxesIMG from "../../assets/Box/Boxes.png";
+import InCartButton from "../Buttons/InCart";
 
 const BuyTogetherContainer = styled.div`
   display: flex;
@@ -67,7 +68,7 @@ const BuyTogether = () => {
           fun, more surprises, and more savings. Don't wait, get this bundle now
           and start the unboxing fun!
         </span>
-        <button type="button">In Order</button>
+        <InCartButton />
       </div>
     </BuyTogetherContainer>
   );
